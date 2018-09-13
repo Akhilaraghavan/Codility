@@ -25,12 +25,7 @@ public class WordMachine2 {
 		
 		for (String element : S.split(" ")) {
 			try {
-				Runnable runnable = map.get(element);
-				if (runnable == null) {
-					push(element);
-				} else {
-					runnable.run();
-				}
+				map.getOrDefault(element, () -> push(element)).run();
 			} catch (Throwable e) {
 				return ERROR;
 			}
