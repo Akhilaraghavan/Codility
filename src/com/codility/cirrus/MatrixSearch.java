@@ -66,8 +66,8 @@ public class MatrixSearch {
 
 	public static void main(String args[]) {
 		MatrixSearch ms = new MatrixSearch();
-		int[][] matrix = new int[][] { { 5, 5, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 5, 5, 5 },
-				{ 5, 5, 5 } };
+		int[][] matrix = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 }, { 13, 14, 15 }, { 16, 17, 18 },
+				{ 5, 5,5 } };
 		System.out.println(ms.solution(matrix));
 	}
 }
