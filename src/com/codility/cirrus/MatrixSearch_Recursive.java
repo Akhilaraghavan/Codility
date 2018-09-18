@@ -1,6 +1,6 @@
 package com.codility.cirrus;
 
-public class MatrixSearch2 {
+public class MatrixSearch_Recursive {
 	public int solution(int[][] A) {
 
 		if (A.length <= 0) {
@@ -51,7 +51,7 @@ public class MatrixSearch2 {
 	}
 
 	public static void main(String args[]) {
-		MatrixSearch2 ms = new MatrixSearch2();
+		MatrixSearch_Recursive ms = new MatrixSearch_Recursive();
 		int[][] matrix = new int[][] { { 5,4, 4 }, { 4, 3, 4 }, { 3, 2, 4 }, { 2, 2, 2 }, { 3, 3, 4 }, { 1, 4, 4 },
 				{ 4,1,1 } };
 		System.out.println(ms.solution(matrix));

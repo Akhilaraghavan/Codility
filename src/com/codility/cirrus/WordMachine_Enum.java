@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.Stack;
 
-public class WordMachine3 {
+public class WordMachine_Enum {
 	public static final int ERROR = -1;
 	public static int MIN_ELEMENT = 0;
 	public static int MAX_ELEMENT = 1048575;
@@ -124,7 +124,7 @@ public class WordMachine3 {
 	}
 
 	public static void main(String args[]) {
-		WordMachine3 wordMachine = new WordMachine3();
+		WordMachine_Enum wordMachine = new WordMachine_Enum();
 		System.out.println(wordMachine.solution("1048575, 1048574, +"));
 	}
 

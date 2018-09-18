@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class WordMachine2 {
+public class WordMachine_Command {
+	
 	public static final int ERROR = -1;
 	public static int MIN_ELEMENT = 0;
 	public static int MAX_ELEMENT = 1048575;
@@ -48,9 +49,9 @@ public class WordMachine2 {
 					+ "number of elements to perform operation");
 		}
 		
-		int a = wordMachine.pop();
-		int b = wordMachine.pop();
-		int diff = a - b;
+		int first = wordMachine.pop();
+		int second = wordMachine.pop();
+		int diff = first - second;
 
 		if (diff < MIN_ELEMENT || diff > MAX_ELEMENT) {
 			throw new IllegalArgumentException("Accepted int range is 0 .. 2 pow 20 -1");
@@ -65,9 +66,9 @@ public class WordMachine2 {
 					+ "number of elements to perform operation");
 		}
 		
-		int a = wordMachine.pop();
-		int b = wordMachine.pop();
-		int sum = a + b;
+		int first = wordMachine.pop();
+		int second = wordMachine.pop();
+		int sum = first + second;
 
 		if (sum < MIN_ELEMENT || sum > MAX_ELEMENT) {
 			throw new IllegalArgumentException("Accepted int range is 0 .. 2 pow 20 -1");
@@ -97,7 +98,7 @@ public class WordMachine2 {
 	
 	
 	public static void main(String args[]) {
-		WordMachine2 wordMachine = new WordMachine2();
+		WordMachine_Command wordMachine = new WordMachine_Command();
 		System.out.println(wordMachine.solution("1048575, 1048574, +"));
 	}
 
