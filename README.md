@@ -1,3 +1,3 @@
 # Codility
 
-Solutions for Codility lessons in Java.
+Solutions to Codility lessons in Java.
